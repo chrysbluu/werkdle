@@ -1,0 +1,64 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #ffe9f0;
+  color: #333;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #d81b60;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.queen-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#guess-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#guess-table th,
+#guess-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#guess-table th {
+  background-color: #333;
+  color: white;
+}
+
+.cell.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cell.incorrect {
+  background-color: #E57373;
+  color: white;
+}
+
+#next-round-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #673AB7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

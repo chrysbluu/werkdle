@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drag Race Wordle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎀 Drag Race Wordle</h1>
+
+ <div id="game-controls">
+  <label for="country-filter">Filter by Country:</label>
+  <select id="country-filter">
+    <option value="all">🌍 All</option>
+    <option value="🇺🇸">🇺🇸 US</option>
+    <option value="🇬🇧">🇬🇧 UK</option>
+    <option value="🇨🇦">🇨🇦 Canada</option>
+    <option value="🇹🇭">🇹🇭 Thailand</option>
+    <option value="🇦🇺">🇦🇺 Down Under</option>
+    <option value="🇪🇸">🇪🇸 España</option>
+    <option value="🇮🇹">🇮🇹 Italia</option>
+    <option value="🇫🇷">🇫🇷 France</option>
+    <option value="🇵🇭">🇵🇭 Philippines</option>
+    <option value="🇧🇪">🇧🇪 Belgique</option>
+    <option value="🇸🇪">🇸🇪 Sverige</option>
+    <option value="🇲🇽">🇲🇽 México</option>
+    <option value="🇧🇷">🇧🇷 Brasil</option>
+    <option value="🇩🇪">🇩🇪 Germany</option>
+    <option value="🇳🇱">🇳🇱 Holland</option>
+    <!-- Add more as needed -->
+  </select>
+
+  <input list="queen-options" id="guess-input" placeholder="Type or pick a queen..." />
+  <datalist id="queen-options"></datalist>
+  <button id="submit-btn">Submit</button>
+  <button id="mode-toggle">Switch to Daily Mode</button>
+  <p id="streak-info"></p>
+  <p id="tries-left"></p>
+</div>
+
+  <table id="guess-table">
+    <thead>
+      <tr>
+        <th>Queen</th>
+        <th>Name</th>
+        <th>Season</th>
+        <th>Placement</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p id="game-result"></p>
+  <button id="next-round-btn" style="display: none;">Next Round</button>
+
+  <script src="queens-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
