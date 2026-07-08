@@ -1,7 +1,7 @@
 const queenNames = Object.keys(queens);
 let correctQueen = queenNames[Math.floor(Math.random() * queenNames.length)];
 let tries = 0;
-let maxTries = 5;
+let maxTries = 10;
 let streak = parseInt(localStorage.getItem("streak") || "0");
 let highScore = parseInt(localStorage.getItem("highScore") || "0");
 let dailyMode = false;
